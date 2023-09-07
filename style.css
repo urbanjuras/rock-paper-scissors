@@ -35,6 +35,8 @@ body{
     font-size: 26px;
 }
 .text{
+    margin-top: 1rem;
+    text-align: center;
     font-weight: bold;
     font-size: 20px;
 }

@@ -1,5 +1,6 @@
 let playerScore = 0
 let computerScore = 0
+let i = 0
 
 function getComputerChoice(){
     let number = Math.floor(Math.random() * 3) + 1
@@ -31,18 +32,28 @@ function round(playerSelection, computerSelection){
         return 'You lose! Scissors beats paper'
     } 
 }
-function game(){
-    for(let i = 0; i<5; i++){
-        let playerSelection = prompt('Choose: ')
-        console.log('Round '+(i+1))
-        console.log(round(playerSelection.toLowerCase(), getComputerChoice()))
-        console.log('Player: '+playerScore, ' Computer: '+computerScore)
-        document.getElementById(playerScore).innerHTML = playerScore
-        document.getElementById(computerScore).innerHTML = computerScore
+function game(playerSelection){
+    if(i<5){
+        console.log(playerScore)
+        console.log(computerScore)
+        console.log(i)
+        document.getElementById('result').innerHTML = round(playerSelection, getComputerChoice())
+        document.getElementById('playerScore').innerHTML = playerScore.toString()
+        document.getElementById('computerScore').innerHTML = computerScore.toString()
+    
+        if (playerScore > computerScore ) console.log('You win!')
+        if (playerScore < computerScore ) console.log('You lose!')
+        if (playerScore == computerScore ) console.log('Tie')
     }
-    if (playerScore > computerScore ) console.log('You win!')
-    if (playerScore < computerScore ) console.log('You lose!')
-    if (playerScore == computerScore ) console.log('Tie')
+    i++        
+}
+function playAgain(){
+    i = 0
+    playerScore = 0
+    computerScore = 0
+    document.getElementById('result').innerHTML = ''
+    document.getElementById('playerScore').innerHTML = '0'
+    document.getElementById('computerScore').innerHTML = '0'
 }
 
 // game()

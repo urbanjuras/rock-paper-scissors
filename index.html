@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Rock, paper, scissors</title>
 </head>
 <body>
     <div class="title-bar">
@@ -20,12 +20,20 @@
         <div class="scoreBar">Computer: </div>  <div id="computerScore" class=" scoreBar"></div> 
     </div>
     <div class="weapon">
-        <div class="text">Choose a weapon:</div>
-        <div class="choose"><button class="rock">Rock</button></div>
-        <div class="choose"><button class="paper">Paper</button></div>
-        <div class="choose"><button class="scissors">Scissors</button></div>
-        <div class="log"></div>
+        <div class="text">Choose your weapon:</div>
+        <div class="choose"><button onclick="game('rock')">Rock</button></div>
+        <div class="choose"><button onclick="game('paper')">Paper</button></div>
+        <div class="choose"><button onclick="game('scissors')">Scissors</button></div>
+    
     </div>
+    <div class="text">Result:
+        <div id="result"></div>
+    </div>
+
+    <div class="content">
+        <button onclick="playAgain()">Play again</button>
+    </div>
+    
     
     
 </body>
