@@ -37,10 +37,12 @@ function game(){
         console.log('Round '+(i+1))
         console.log(round(playerSelection.toLowerCase(), getComputerChoice()))
         console.log('Player: '+playerScore, ' Computer: '+computerScore)
+        document.getElementById(playerScore).innerHTML = playerScore
+        document.getElementById(computerScore).innerHTML = computerScore
     }
     if (playerScore > computerScore ) console.log('You win!')
     if (playerScore < computerScore ) console.log('You lose!')
     if (playerScore == computerScore ) console.log('Tie')
 }
 
-game()
+// game()

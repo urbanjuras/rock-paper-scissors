@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Javascript</h1>
-    <button>Press me</button>
-    <div id="greeting"></div>
+    <div class="title-bar">
+        <div class="title">
+            <h1>Rock, paper, scissors</h1>
+        </div>
+        <div class="description">
+            First to 5 wins!
+        </div>
+    </div>
+    <div class="content">
+        <div class="scoreBar">Player: </div><div id="playerScore" class="scoreBar"></div>
+        <div class="scoreBar">Computer: </div>  <div id="computerScore" class=" scoreBar"></div> 
+    </div>
+    <div class="weapon">
+        <div class="text">Choose a weapon:</div>
+        <div class="choose"><button class="rock">Rock</button></div>
+        <div class="choose"><button class="paper">Paper</button></div>
+        <div class="choose"><button class="scissors">Scissors</button></div>
+        <div class="log"></div>
+    </div>
+    
+    
 </body>
 </html>
 <script src="external.js"></script>

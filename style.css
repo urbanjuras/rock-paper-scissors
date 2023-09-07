@@ -1,0 +1,53 @@
+.title-bar {
+    text-align: center;
+    font-weight: bold;
+    height: 100px;
+}
+.title{
+    
+    font-size: 25px;
+}
+body{
+    background-color: #E6E6FA; 
+}
+
+.content{
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+.scoreBar{
+    padding: 1rem 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 26px;
+}
+.weapon{
+    margin-top: 1rem;
+    text-align: center;
+}
+.choose{
+    padding: 1rem 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 26px;
+}
+.text{
+    font-weight: bold;
+    font-size: 20px;
+}
+button{
+    border: 2px solid #7e5dcf;
+    width: 100px;
+    height: 50px;
+    background: #B4A0E6;
+    font-size: 15px;
+    font-weight: bold;
+}
+button:hover{
+    font-style: italic;
+    font-size: 20px;
+    
+}
